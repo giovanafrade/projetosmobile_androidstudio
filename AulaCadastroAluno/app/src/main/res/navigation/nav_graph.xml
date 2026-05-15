@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/homeFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.senai.aulacadastroaluno.HomeFragment"
+        android:label="Home"
+        >
+        <action
+            android:id="@+id/action_home_to_cadastro"
+            app:destination="@+id/cadastroFragment"/>
+
+        <action
+            android:id="@+id/action_home_to_detalhe"
+            app:destination="@+id/detalheFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.senai.aulacadastroaluno.CadastroFragment"
+        android:label="Cadastro"/>
+
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="com.senai.aulacadastroaluno.DetalheFragment"
+        android:label="Detalhe"/>
+
+</navigation>
